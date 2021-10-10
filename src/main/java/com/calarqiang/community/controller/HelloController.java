@@ -15,7 +15,7 @@ public class HelloController {
     public String getHello(@RequestParam(name="name")String name,Model model){
        //必须将接收的参数传递给model之后，才可以继续往下走
         model.addAttribute("name",name);
-        return "hello";
+        return "index";
     }
 
 }
